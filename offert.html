@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"
         rel="preload">
     <script async src="https://kit.fontawesome.com/e77c26dabf.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
@@ -81,7 +82,7 @@
             <div class="wrapper">
                 <h3 class="section-title">Najczęsciej zadawane pytania</h3>
                 <div class="faq__containers">
-                    <div class="faq__container">
+                    <div data-aos="fade-up" data-aos-delay="300" class="faq__container">
                         <div class="faq__container-question">
                             <h4 class="faq__question">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
                                 corrupti et fugit.
@@ -94,7 +95,7 @@
                         </p>
                     </div>
 
-                    <div class="faq__container">
+                    <div data-aos="fade-up" data-aos-delay="600" class="faq__container">
                         <div class="faq__container-question">
                             <h4 class="faq__question">Lorem ipsum dolor sit amet consectetur.
                             </h4>
@@ -106,7 +107,7 @@
                         </p>
                     </div>
 
-                    <div class="faq__container">
+                    <div data-aos="fade-up" data-aos-delay="900" class="faq__container">
                         <div class="faq__container-question">
                             <h4 class="faq__question">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 Obcaecati eum totam eligendi ab nemo animi doloribus nobis alias incidunt nam!
@@ -121,7 +122,7 @@
                         </p>
                     </div>
 
-                    <div class="faq__container">
+                    <div data-aos="fade-up" data-aos-delay="1200" class="faq__container">
                         <div class="faq__container-question">
                             <h4 class="faq__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
                                 odio, molestiae perspiciatis adipisci totam dolorem.
@@ -176,6 +177,17 @@
     </div>
     <p class="footer__copyright">©2022 Forest Group Company Ltd.</p>
 </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 3, // values from 0 to 3000, with step 50ms
+            duration: 800, // values from 0 to 3000, with step 50ms
+        });
+    </script>
     <script src="./dist/js/main.min.js"></script>
 </body>
 
