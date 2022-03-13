@@ -1,0 +1,172 @@
+@media (min-width: 768px) {
+	.section-title {
+		font-size: 4rem;
+	}
+	.btn {
+		&--offert {
+			padding: 1em 4em;
+			font-size: 1.5rem;
+			text-align: center;
+			// width: 50%;
+		}
+	}
+
+	.navigation {
+		&__link {
+			a {
+				font-size: 2.5rem;
+			}
+		}
+	}
+
+	.header {
+		&__background {
+			padding: 8em 2em;
+		}
+
+		&__title {
+			font-size: 3.5rem;
+		}
+
+		&__subtitle {
+			font-size: 3.5rem;
+		}
+	}
+
+	.about {
+		&__box {
+			flex-direction: row;
+			&-image {
+				max-width: 50%;
+				margin-right: 2em;
+			}
+		}
+
+		&__box-text {
+			width: 50%;
+
+			&-title {
+				font-size: 4rem;
+				margin-bottom: 0.5em;
+			}
+
+			&-paragraph {
+				line-height: 2.5rem;
+			}
+		}
+	}
+
+	//hero
+	.hero {
+		&__image {
+			background-image: url(/dist/img/girl_desktop.jpg);
+			padding: 4em 8em;
+			background-size: cover;
+		}
+
+		&__box {
+			border: 1px solid $white;
+			padding: 2em 3em;
+
+			&-text {
+				font-size: 2.5rem;
+			}
+		}
+	}
+
+	//offert
+	.offert {
+		&__text {
+			font-size: 2.5rem;
+		}
+
+		&__cards {
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+
+		&__card {
+			padding: 3em 2em;
+			margin: 1em;
+			width: calc(50% - 2em);
+
+			// &:nth-child(3) {
+			// 	margin-left: auto;
+			// 	margin-right: auto;
+			// }
+
+			&-info-details {
+				font-size: 2rem;
+			}
+		}
+
+		&__box {
+			width: 50%;
+			&-more {
+				&-title {
+					font-size: 3rem;
+				}
+
+				&-text {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.footer {
+		background-color: $thirdColor;
+		overflow: hidden;
+
+		&__box {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			padding: 2em 0em 0em 0em;
+
+			&-information {
+				padding: 0em 2em;
+			}
+		}
+
+		&__box-one {
+			padding: 0;
+			margin: 0;
+		}
+
+		&__box-two {
+			h4 {
+				font-size: 1.7rem;
+			}
+		}
+
+		&__copyright {
+			border-top: 1px solid $secondaryColor;
+			padding: 1em 0em 1em 0em;
+			text-align: center;
+		}
+	}
+
+	.offerts {
+		&__container-boxes {
+			flex-direction: row;
+		}
+
+		&__container-body {
+			width: 33.33%;
+
+			&:nth-child(2) {
+				border-left: none;
+				border-right: none;
+			}
+		}
+	}
+
+	.faq {
+		&__question {
+			font-size: 1.7rem;
+		}
+	}
+}

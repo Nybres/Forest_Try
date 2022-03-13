@@ -1,0 +1,145 @@
+@media (min-width: 1400px) {
+	.section-title {
+		font-size: 4.5rem;
+		// margin-bottom: 1em;
+	}
+	//header
+	.header {
+		&__background {
+			padding: 14em 2em;
+		}
+
+		&__title {
+			font-size: 4rem;
+		}
+
+		&__subtitle {
+			font-size: 5rem;
+		}
+	}
+
+	//about
+	.about {
+		padding: 8em 2em;
+		&__box {
+			&-image {
+				max-width: 50%;
+				margin-right: 3em;
+			}
+		}
+
+		&__box-text {
+			&-title {
+				font-size: 5rem;
+				margin-bottom: 0.5em;
+			}
+
+			&-paragraph {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	//hero
+	.hero {
+		&__image {
+			padding: 6em 18em;
+			background-size: cover;
+		}
+
+		&__box {
+			border: 1px solid $white;
+			padding: 2em 3em;
+
+			&-text {
+				font-size: 4.5rem;
+			}
+		}
+	}
+
+	//offert
+	.offert {
+		padding: 8em 2em;
+		&__box {
+			&-more {
+				&-text {
+					font-size: 2.5rem;
+				}
+			}
+		}
+	}
+
+	.footer {
+		background-color: $thirdColor;
+		overflow: hidden;
+
+		&__box {
+			padding: 3em 0em;
+
+			&-information {
+				padding: 0em 3em;
+			}
+
+			&-content {
+				font-size: 1.8rem;
+			}
+		}
+
+		&__box-two {
+			h4 {
+				font-size: 2rem;
+			}
+		}
+
+		&__copyright {
+			border-top: 1px solid $secondaryColor;
+			padding: 1em 0em 1em 0em;
+			text-align: center;
+		}
+	}
+
+	.offerts {
+		padding: 8em 2em;
+		&__container-boxes {
+			flex-direction: column;
+		}
+
+		&__container-body {
+			flex-direction: row;
+			justify-content: space-evenly;
+			padding: 3em;
+			width: 100%;
+
+			&:nth-child(2) {
+				border-left: 1px solid rgba(163, 163, 163, 0.8);
+				border-right: 1px solid rgba(163, 163, 163, 0.8);
+			}
+
+			&-name,
+			&-description,
+			&-price {
+				margin-bottom: 0em;
+			}
+
+			&-name {
+				font-size: 3.2rem;
+				min-width: 15%;
+			}
+
+			&-description {
+				font-size: 2rem;
+			}
+
+			&-price {
+				font-size: 3.2rem;
+			}
+		}
+	}
+
+	.faq {
+		padding: 2em 2em 8em 2em;
+		&__container-answer {
+			font-size: 2rem;
+		}
+	}
+}
