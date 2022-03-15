@@ -3,6 +3,15 @@
 		font-size: 4.5rem;
 		// margin-bottom: 1em;
 	}
+
+	.btn {
+		&--offert {
+			padding: 0.5em 1.2em;
+			font-size: 1.5rem;
+			text-align: center;
+			// width: 50%;
+		}
+	}
 	//header
 	.header {
 		&__background {
@@ -107,7 +116,7 @@
 		&__container-body {
 			flex-direction: row;
 			justify-content: space-evenly;
-			padding: 3em;
+			padding: 3em 2.5em;
 			width: 100%;
 
 			&:nth-child(2) {
@@ -122,7 +131,7 @@
 			}
 
 			&-name {
-				font-size: 3.2rem;
+				font-size: 2.8rem;
 				min-width: 15%;
 			}
 
@@ -131,7 +140,7 @@
 			}
 
 			&-price {
-				font-size: 3.2rem;
+				font-size: 2.8rem;
 			}
 		}
 	}

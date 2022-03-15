@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const navLinks = document.querySelectorAll(".navigation__link");
 	const navLinksA = document.querySelectorAll(".navigation__link a");
 	const downArrows = document.querySelectorAll(".fa-angle-down");
+	const faqQuestion = document.querySelectorAll(".faq__container");
 	const getCurrentUrl = window.location.href;
 
 	const deleteLinkAnimation = params => {
@@ -36,13 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 		handleLinkAnimation();
 
-		navMenu.addEventListener("click", e => {
-			if (e.target != "li") {
-				navMenu.classList.remove("navigation__links--active");
-				burgerBars.classList.remove("burger-btn__bars--active");
-				deleteLinkAnimation();
-			}
-		});
+		// navMenu.addEventListener("click", e => {
+		// 	if (e.target != "li") {
+		// 		navMenu.classList.remove("navigation__links--active");
+		// 		burgerBars.classList.remove("burger-btn__bars--active");
+		// 		deleteLinkAnimation();
+		// 	}
+		// });
 	};
 
 	const changeNavFocus = url => {
@@ -86,22 +87,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	};
 
 	const showAnswer = params => {
-		downArrows.forEach(arrow => {
-			arrow.addEventListener("click", e => {
-				const clickedArrow = e.target;
-				if (clickedArrow.classList.contains("fa-angle-down")) {
-					clickedArrow.classList.remove("fa-angle-down");
-					clickedArrow.classList.add("fa-angle-up");
-				} else {
-					clickedArrow.classList.remove("fa-angle-up");
-					clickedArrow.classList.add("fa-angle-down");
-				}
+			downArrows.forEach(arrow => {
+				arrow.addEventListener("click", e => {
+					const clickedArrow = e.target;
+					if (clickedArrow.classList.contains("fa-angle-down")) {
+						clickedArrow.classList.remove("fa-angle-down");
+						clickedArrow.classList.add("fa-angle-up");
+					} else {
+						clickedArrow.classList.remove("fa-angle-up");
+						clickedArrow.classList.add("fa-angle-down");
+					}
 
-				const clickedContainer = e.target.parentElement.parentElement;
-				const answer = clickedContainer.querySelector(".faq__container-answer");
-				answer.classList.toggle("faq__container-answer--active");
+					const clickedContainer = e.target.parentElement.parentElement;
+					const answer = clickedContainer.querySelector(
+						".faq__container-answer"
+					);
+					answer.classList.toggle("faq__container-answer--active");
+				});
 			});
-		});
 	};
 
 	const url = makeShortUrl();
